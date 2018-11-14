@@ -1719,3 +1719,11 @@ span.icon_g_plus {
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
+
+#form-response-sucess{
+    display: none;
+}
+
+#form-response-error{
+    display: none;
+}
