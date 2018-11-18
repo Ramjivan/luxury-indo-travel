@@ -16,8 +16,9 @@
         function hideURLbar() {
             window.scrollTo(0, 1);
         }
+        //site theame color
         if (!localStorage.getItem("my_custom_color_travel")) {
-            localStorage.setItem("my_custom_color_travel", "rgb(66, 165, 245)");
+            localStorage.setItem("my_custom_color_travel", "rgb(255, 169, 0)");
         }
 
     </script>
@@ -41,48 +42,23 @@
 </head>
 
 <body>
-    <!-- blast color scheme -->
-    <div class="blast-box">
-        <div class="blast-frame">
-            <p>color schemes</p>
-            <div class="blast-colors d-flex justify-content-center">
-                <div class="blast-color">#42a5f5</div>
-                <div class="blast-color">#ff4f81</div>
-                <div class="blast-color">#77ba00</div>
-                <div class="blast-color">#ffa900</div>
-                <div class="blast-color">#2ec4b6</div>
-
-                <!-- you can add more colors here -->
-            </div>
-            <p class="blast-custom-colors">Choose Custom color</p>
-            <input type="color" name="blastCustomColor" value="#cf2626">
-
-        </div>
-        <div class="blast-icon"><i class="fa fa-cog" aria-hidden="true"></i></div>
-
-    </div>
-    <!-- //blast color scheme -->
+    
     <!-- top header -->
     <div class="header-top bg-theme" data-blast="bgColor">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <ul class="d-flex header-w3_pvt">
-                        <li>
-                            <a class="navbar-brand text-white" href="#">
-                                <img src="images/logo.png" height="50" width="200" alt="logo" style="-webkit-filter: drop-shadow(5px 5px 5px rgba(13, 5, 80, 0.733)); filter: drop-shadow(5px 5px 5px #2773be);">
-                            </a>
-                        </li>
-                        
-                        
-                    </ul>
+                    <a class="navbar-brand text-white" href="#">
+                        <img src="images/logo.png" height="50" width="200" alt="logo" style="-webkit-filter: drop-shadow(5px 5px 5px rgba(13, 5, 80, 0.733)); filter: drop-shadow(5px 5px 5px #2773be);">
+                    </a>
+                    
                 </div>
 
 
 
-                <div class="col-md-6 hearder-right-w3_pvt">
+                <div class="col-md-6 hearder-right-w3_pvt" >
                     <ul class="d-flex header-w3_pvt justify-content-lg-end">
-                        <li><button type="button" class="btn w3ls-btn d-block" data-toggle="modal" aria-pressed="false"
+                        <li><button type="button" style="float:right;" class="btn w3ls-btn d-block" data-toggle="modal" aria-pressed="false"
                                 data-target="#exampleModal1">
                                 <span class="fa fa-sign-in"></span>Register
                             </button>
@@ -135,7 +111,7 @@
                         <div class="banner-text">
                             <div class="slider-info">
                                 <span class="line">collect moments..</span>
-                                <h3> Transfers, Hotels and <span data-blast="bgColor">Everything</span> else.</h3>
+                                <h3> Transfers, Hotels and <br> <span data-blast="bgColor">Everything</span> else.</h3>
                                 <p class="text-white">“The world is a book and those who do not travel read only one page.” – Augustine of Hippo i </p>
                                 <a class="btn bg-theme mt-4 w3_pvt-link-bnr text-white" data-blast="bgColor"
                                     href="contact.html" role="button">Contact Us</a>
@@ -143,15 +119,30 @@
                         </div>
                     </div>
                 </li>
-                <li class="banner banner2">
+                
+                <li class="banner banner3">
                     <div class="container">
                         <div class="banner-text">
                             <div class="slider-info">
                                 <span class="line">collect moments..</span>
-                                <h3>Perfectly synchronised end to end <span data-blast="bgColor"> MICE </span> solutions.</h3>
-                                <p class="text-white">“Travel and change of place impart new vigor to the mind.” – Seneca </p>
-                                <a class="btn bg-theme mt-4 w3_pvt-link-bnr text-white" href="contact.html" role="button"
-                                    data-blast="bgColor">Contact Us</a>
+                                <h3> Perfectly synchronised end to end <span data-blast="bgColor">M.I.C.E.</span> solutions </h3>
+                                <p class="text-white">“The world is a book and those who do not travel read only one page.” – Augustine of Hippo i </p>
+                                <a class="btn bg-theme mt-4 w3_pvt-link-bnr text-white" data-blast="bgColor"
+                                    href="contact.html" role="button">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="banner banner4">
+                    <div class="container">
+                        <div class="banner-text">
+                            <div class="slider-info">
+                                <span class="line">collect moments..</span>
+                                <h3> Transfers, Hotels and <br> <span data-blast="bgColor">Everything</span> else.</h3>
+                                <p class="text-white">“The world is a book and those who do not travel read only one page.” – Augustine of Hippo i </p>
+                                <a class="btn bg-theme mt-4 w3_pvt-link-bnr text-white" data-blast="bgColor"
+                                    href="contact.html" role="button">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -170,13 +161,24 @@
                         <h3 class="main-title-w3pvt text-white text-capitalize">about us</h3>
                         <p class="text-white">Think Bali, Think Luxury Indo Travels</p>
                     </div>
-                    <p class="my-3 text-right text-white child_second">Luxury Indo Travel, is a full-fledged Destination Management Company offering bespoke services across the board to the entire travel and tourism fraternity .</p>
-                    <p class="my-3 text-right text-white child_second">
-                        Expanding its umbrella to cover all aspects of the destination management business, today Luxury Indo Travel is a one-stop shop providing comprehensive incoming travel services in Bali ( Indonesia).</p>
-                    <p class="my-3 text-right text-white child_second">Right from Accommodation ie. Hotels & Villas.. to meet and greet services, transfers, tours and excursions to tailor made programs to cater to the niche market segment and MICE related services .
+                    <ul type="circle">
+                        <li><p class="my-3 text-white child_second">Luxury Indo Travel, is a full-fledged Destination Management Company offering bespoke services across the board to the entire travel and tourism fraternity .</p></li>
+                        <li><p class="my-3  text-white child_second">
+                                Expanding its umbrella to cover all aspects of the destination management business, today Luxury Indo Travel is a one-stop shop providing comprehensive incoming travel services in Bali ( Indonesia).</p>
+                        </li>
+                        <li>
+                                <p class="my-3  text-white child_second">Right from Accommodation ie. Hotels & Villas.. to meet and greet services, transfers, tours and excursions to tailor made programs to cater to the niche market segment and MICE related services .
 
-                            We specialise in handling your specific group requirements .</p>
-                    <p class="my-3 text-right text-white child_second">Luxury Indo Travel has grown in providing quality, professional and value added services to its customers.</p>
+                                        We specialise in handling your specific group requirements .</p>
+                        </li>
+                        <li>
+                                <p class="my-3 text-white child_second">Luxury Indo Travel has grown in providing quality, professional and value added services to its customers.</p>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                    
                     <div class="ml-auto text-right">
                         <a href="contact.html" class="text-capitalize text-dark w3_pvt-link-bnr btn bg-light mt-sm-4">Contact
                             Us</a>
@@ -187,49 +189,91 @@
         </div>
     </div>
     <!-- about -->
+
     <!-- services -->
-    <section class=" services-wthreepvt position-relative" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 service-sub-grids">
-                    <div class="d-flex services-box">
-                        <span class="icon">
-                            <i class="fa fa-plane" data-blast="color"></i>
-                        </span>
-                        <div class="service-content">
-                            <span>Travel</span>
-                            <h4>Flight tickets and Visa</h4>
-                        </div>
-                    </div>
-                    <div class="d-flex services-box">
-                        <span class="icon">
-                            <i class="fa fa-hotel" data-blast="color"></i>
-                        </span>
-                        <div class="service-content">
-                            <span>Stay</span>
-                            <h4>Hotel & Resort Booking</h4>
-                        </div>
-                    </div>
-                    <div class="d-flex services-box">
-                        <span class="icon">
-                            <i class="fa fa-cutlery" data-blast="color"></i>
-                        </span>
-                        <div class="service-content">
-                            <span>Site seeing</span>
-                            <h4>Exiting food & site seeing</h4>
-                        </div>
-                    </div>
-                    
+    <section class="blog_w3ls py-lg-5">
+            <div class="container py-sm-5 py-4">
+                <div class="title-desc text-right pb-sm-3">
+                    <h3 class="main-title-w3pvt  text-capitalize" style="text-align:center;" data-blast="color">Our Services</h3>
                 </div>
-                <div class="col-lg-6">
-                    
-                    <div class="my-auto service-top-img">
-                        <img src="images/pic1.jpg" alt="" class="img-fluid rounded" />
+                <div class="row space-sec">
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6 mt-sm-0 mt-4">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#exampleModal2" data-toggle="modal" aria-pressed="false" data-target="#exampleModal2"
+                                    role="button">
+                                    <img class="card-img-bottom" src="images/fitgit.jpg" alt="Kuta beach">
+                                    <span class="fa fa-arrow-right bg-theme" data-blast="bgColor" aria-hidden="true"></span>
+    
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="blog-title card-title font-weight-bold">
+                                    <a href="#exampleModal2" data-toggle="modal" aria-pressed="false" data-target="#exampleModal2"
+                                        role="button">F.I.T. and G.I.T</a>
+                                </h5>
+                                <p>We specialise in all Types of FIT and GIT travel. <a href="contact.html">Contact us to get best rates and services.</a></p>
+                                <button type="button" class="btn blog-btn wthree-bnr-btn mt-3" data-blast="color"
+                                    data-toggle="modal" aria-pressed="false" data-target="#exampleModal2">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
                     </div>
+                    <!-- //blog grid -->
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-sm-5 mt-4">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#exampleModal3" data-toggle="modal" aria-pressed="false" data-target="#exampleModal3"
+                                    role="button">
+                                    <img class="card-img-bottom" src="images/meeting.jpg" alt="Card image cap">
+                                    <span class="fa fa-arrow-right post-icon bg-theme" data-blast="bgColor" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="blog-title card-title font-weight-bold">
+                                    <a href="#exampleModal3" data-toggle="modal" aria-pressed="false" data-target="#exampleModal3"
+                                        role="button">M.I.C.E</a>
+                                </h5>
+                                <p>When it comes to planning your Meetings, Incentive Tours, Conferences, Exhibitions and Events, whether in India and overseas, you need look no further.</p>
+                                <button type="button" class="btn blog-btn wthree-bnr-btn mt-3" data-blast="color"
+                                    data-toggle="modal" aria-pressed="false" onclick="window.location.href='https://www.google.co.in/destination/map/topsights?q=bali%20indonesia&safe=active&sa=X&site=search&output=search&dest_mid=%2Fm%2F01bkb&ictx=1&ved=0ahUKEwi8sOKHutTeAhVJvo8KHYqeC6oQv2gIFCgB&tcfs#trifp=skpm%253D/m/0dn5jx';">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
+                    <!-- blog grid -->
+                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 mx-auto" id="services">
+                        <div class="card">
+                            <div class="card-header p-0  position-relative">
+                                <a href="#exampleModal4" data-toggle="modal" aria-pressed="false" data-target="#exampleModal4"
+                                    role="button">
+                                    <img class="card-img-bottom" src="images/wedding.jpg" alt="Card image cap">
+                                    <span class="fa fa-arrow-right bg-theme" data-blast="bgColor" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="blog-title card-title font-weight-bold">
+                                    <a href="#exampleModal4" data-toggle="modal" aria-pressed="false" data-target="#exampleModal4"
+                                        role="button">Destination weddign</a>
+                                </h5>
+                                <p>Wanna get married at beautiful destinations and make it memorable. Get in touch with us.</p>
+                                <button type="button" class="btn blog-btn wthree-bnr-btn mt-3" data-toggle="modal"
+                                    aria-pressed="false" data-target="#exampleModal4" data-blast="color">
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog grid -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
     <!-- //services -->
     <!-- about bottom -->
     <div class="about-wthree1 bg-theme" data-blast="bgColor">
@@ -240,19 +284,27 @@
                         <h3 class="main-title-w3pvt text-white text-capitalize">discover</h3>
                         <p class="text-white">Explore it all. The sky is the limit!</p>
                     </div>
-                    <p class="my-3 text-white child_second">Bali is an Indonesian island known for its forested
-                        volcanic mountains, iconic rice paddies, beaches and coral reefs. The island is home to
-                        religious sites such as cliffside Uluwatu Temple. To the south, the beachside city of Kuta has
-                        lively bars, while Seminyak, Sanur and Nusa Dua are popular resort towns. The island is also
-                        known for its yoga and meditation retreats.
-                    </p>
-                    <p class="my-3 text-white child_second">
-                        The southern tip is also world-renowned for its prime surfing spots such as Padang Padang and
-                        Uluwatu. Further inland is Ubud, a hill town known for its spa treatments, yoga and ecotourism,
-                        which may include a trip to a monkey preserve. Ringing the island are coral reefs teeming with
-                        sea life, making it a hot spot for scuba diving. You can also get a taste of Balinese culture
-                        at a gamelan percussion performance or one of thousands of Hindu temples, which feature
-                        intricate sculpture and regular festivals</p>
+                    <ul>
+                        <li>
+                            <p class="my-3 text-white child_second">Bali is an Indonesian island known for its forested
+                                volcanic mountains, iconic rice paddies, beaches and coral reefs. The island is home to
+                                religious sites such as cliffside Uluwatu Temple. To the south, the beachside city of Kuta has
+                                lively bars, while Seminyak, Sanur and Nusa Dua are popular resort towns. The island is also
+                                known for its yoga and meditation retreats.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="my-3 text-white child_second">
+                                The southern tip is also world-renowned for its prime surfing spots such as Padang Padang and
+                                Uluwatu. Further inland is Ubud, a hill town known for its spa treatments, yoga and ecotourism,
+                                which may include a trip to a monkey preserve. Ringing the island are coral reefs teeming with
+                                sea life, making it a hot spot for scuba diving. You can also get a taste of Balinese culture
+                                at a gamelan percussion performance or one of thousands of Hindu temples, which feature
+                                intricate sculpture and regular festivals</p>
+                        </li>
+                    </ul>
+                    
+                    
                     <div class="ml-auto">
                         <a href="contact.html" class="text-capitalize text-dark w3_pvt-link-bnr btn bg-light mt-sm-4">Contact
                             us</a>
@@ -266,11 +318,11 @@
     </div>
     <!-- about bottom -->
 
-    <!-- blog -->
-    <section class="blog_w3ls py-lg-5" id="posts">
+    <!-- destinations -->
+    <section class="blog_w3ls py-lg-5">
         <div class="container py-sm-5 py-4">
             <div class="title-desc text-right pb-sm-3">
-                <h3 class="main-title-w3pvt  text-capitalize">Destinations in Bali</h3>
+                <h3 class="main-title-w3pvt  text-capitalize" data-blast="color">Destinations in Bali</h3>
                 <p>Explore it all. The sky is the limit!</p>
             </div>
             <div class="row space-sec">
@@ -351,7 +403,7 @@
             </div>
         </div>
     </section>
-    <!-- //blog -->
+    <!-- //destinations -->
 
     <!-- footer -->
     <footer class="cpy-right bg-theme" data-blast="bgColor">

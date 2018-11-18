@@ -1,8 +1,3 @@
-/*--Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
- --*/
 
 body {
     margin: 0;
@@ -247,6 +242,7 @@ ul.header-w3_pvt li span {
 
 .callbacks_container {
     position: relative;
+    
 }
 
 ul.callbacks_tabs {
@@ -407,17 +403,28 @@ ul.callbacks_tabs {
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
+    
 }
 
-.banner2 {
-    background: url(../images/banner2.jpg) bottom no-repeat;
+.banner3 {
+    background: url(../images/banner3.jpg) bottom no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
+    
 }
 
+.banner4 {
+    background: url(../images/banner4.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    
+}
 .banner:before {
     position: absolute;
     content: '';
@@ -1086,7 +1093,7 @@ span.title-line {
 
 /* blog */
 
-span.fa.fa-user.post-icon, span.fa.fa-share{
+span.fa.fa-user.post-icon, span.fa.fa-share, span.fa.fa-arrow-right{
     position: absolute;
     width: 50px;
     height: 50px;
@@ -1726,4 +1733,14 @@ span.icon_g_plus {
 
 #form-response-error{
     display: none;
+}
+
+#services{
+    margin-top: 70px;
+    margin-bottom: 200px;
+   
+}
+
+li p{
+    font-size: 1.2em;
 }
