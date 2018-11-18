@@ -14,6 +14,10 @@
         function hideURLbar() {
             window.scrollTo(0, 1);
         }
+        //site theame color
+        if (!localStorage.getItem("my_custom_color_travel")) {
+            localStorage.setItem("my_custom_color_travel", "rgb(255, 169, 0)");
+        }
     </script>
     <!-- Custom Theme files -->
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
@@ -30,7 +34,7 @@
     <!-- //online-fonts -->
     <style>
         .nav-link{
-        background: lightblue;
+        background: rgb(255, 169, 0);
     }
     </style>
 </head>
@@ -57,82 +61,105 @@
 
     </div>
     <!-- //blast color scheme -->
-    <!-- top header -->
     <div class="header-top bg-theme" data-blast="bgColor">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="d-flex header-w3_pvt">
-                        <li>
-                            <span class="fa fa-envelope-open"></span>
-                            <a href="mailto:info@luxuryindotravel.com" class="text-white">info@luxuryindotravel.com</a>
-                        </li>
-                        <li>
-                            <span class="fa fa-phone"></span>
-                            <p class="d-inline text-white">+626 123 7890</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6 hearder-right-w3_pvt">
-                    <ul class="d-flex header-w3_pvt justify-content-lg-end">
-                        <li><button type="button" class="btn w3ls-btn d-block" data-toggle="modal" aria-pressed="false"
-                                data-target="#exampleModal1">
-                                <span class="fa fa-sign-in"></span>Register
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" class="btn w3ls-btn btn-2  d-block" data-toggle="modal" aria-pressed="false"
-                                data-target="#exampleModal">
-                                <span class="fa fa-lock"></span> Sign in
-                            </button>
-                        </li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <a class="navbar-brand text-white" href="#">
+                            <img src="images/logo.png" height="50" width="200" alt="logo" style="-webkit-filter: drop-shadow(5px 5px 5px rgba(13, 5, 80, 0.733)); filter: drop-shadow(5px 5px 5px #2773be);">
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="col-md-3 hearder-right-w3_pvt">
+                        <ul class="d-flex header-w3_pvt justify-content-lg-end">
+                            <li><button type="button" style="float:right;" class="btn w3ls-btn d-block" data-toggle="modal" aria-pressed="false"
+                                    data-target="#exampleModal1">
+                                    <span class="fa fa-sign-in"></span>Register
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn w3ls-btn btn-2  d-block" data-toggle="modal" aria-pressed="false"
+                                    data-target="#exampleModal">
+                                    <span class="fa fa-lock"></span> Sign in
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- //top header -->
     <!-- banner -->
     <div id="home">
         <!-- header -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-
-                <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-lg-auto text-center">
-                        <li class="nav-item active  mr-lg-3 mt-lg-0 mt-sm-3">
-                            <a class="nav-link" href="index.html" data-blast="color">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
-                            <a class="nav-link" href="aboutbali.html">About Bali</a>
-                        </li>
-                        <li class="nav-item  mt-lg-0 mt-3">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item  mt-lg-0 mt-3">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
-        </header>
-        <!-- //header -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <h1>
+    
+                    </h1>
+                    <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-lg-auto text-center">
+                            <li class="nav-item active  mr-lg-3 mt-lg-0 mt-sm-3">
+                                <a class="nav-link" href="index.html" data-blast="color">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="aboutbali.html">About Bali</a>
+                            </li>
+                            <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="fitgit.html">F.I.T. and G.I.T</a>
+                                        <a class="dropdown-item" href="mice.html">M.I.C.E.</a>
+                                        <a class="dropdown-item" href="destwedding.html">Destination wedding</a>
+                                        
+                                    </div>
+                                </li>
+                            <li class="nav-item  mt-lg-0 mt-3">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item  mt-lg-0 mt-3">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </nav>
+            </header>
+            <!-- //header -->
 
     </div>
     <!-- //banner -->
     
 
     <div class="container" style="padding-top:6em;">
-
-        <div class="well">
-            Bali is the most popular island holiday destination in the Indonesian archipelago. The island’s home to an ancient culture that's known for its warm hospitality. Exotic temples and palaces set against stunning natural backdrops are some of its top attractions. Dining in Bali presents endless choices of local or far-flung cuisine. After sunset, famous nightspots come to life offering exciting clubbing and packed dance floors. Inland, towering volcanoes and pristine jungles greet you with plenty to see and do. Most can't stay away from the beach for long, though. Enjoy amazing beach resorts and luxury resorts in any of Bali’s famous areas. These include Kuta, Seminyak and Jimbaran where most of the great hotels and villas are right on the beach. They’re also home to most of Bali’s exciting surf spots. For tranquil seascapes and sunrises, the eastern beach resorts are your best bets. These include Sanur, Nusa Dua and the remote coast of Candidasa are your best bets. In Bali’s farther and lesser travelled East Bali and northern region, you’ll find some world-class diving spots with calm bays. They're home to pristine coral gardens teeming with colourful marine biodiversity. The island’s centre also offers plenty of reasons that it can be better than the beach. Explore the scenic central highlands of Ubud with its flowing rice fields, valleys and forested rivers. Yet Ubud's not only a place for cultural day-trippers. It also offers plenty for adventure-seekers and shopaholics. Picturesque mountain jogging tracks are within a short walk from designer boutique and chic cafe-lined streets. Sightseeing opportunities in Ubud are virtually endless. The town itself is densely dotted with a multitude of ancient temples, palaces and historical sites. There are many more off-the-beaten-track spots around this magical island worth discovering.
+        <h2 data-blast="color">Get to know about bali</h2>
+        <div class="well" style="padding:2em;text-align: justify;
+        text-justify: inter-word; border:1px solid gray; background: lightgoldenrodyellow;border-radius: 1em;">
+            <p>Bali is the most popular island holiday destination in the Indonesian archipelago. The island’s home to an ancient culture that's known for its warm hospitality. Exotic temples and palaces set against stunning natural backdrops are some of its top attractions.</p>
+                <ul>
+                    <li>
+                            Dining in Bali presents endless choices of local or far-flung cuisine. After sunset, famous nightspots come to life offering exciting clubbing and packed dance floors.
+                    </li>
+                    <li>
+                            Inland, towering volcanoes and pristine jungles greet you with plenty to see and do.
+                    </li>
+                    <li>
+                            Most can't stay away from the beach for long, though. Enjoy amazing beach resorts and luxury resorts in any of Bali’s famous areas. These include Kuta, Seminyak and Jimbaran where most of the great hotels and villas are right on the beach. They’re also home to most of Bali’s exciting surf spots. For tranquil seascapes and sunrises, the eastern beach resorts are your best bets. These include Sanur, Nusa Dua and the remote coast of Candidasa are your best bets.
+                    </li>
+                    <li>
+                            In Bali’s farther and lesser travelled East Bali and northern region, you’ll find some world-class diving spots with calm bays. They're home to pristine coral gardens teeming with colourful marine biodiversity. The island’s centre also offers plenty of reasons that it can be better than the beach. Explore the scenic central highlands of Ubud with its flowing rice fields, valleys and forested rivers.
+                    </li>
+                    <li> Yet Ubud's not only a place for cultural day-trippers. It also offers plenty for adventure-seekers and shopaholics. Picturesque mountain jogging tracks are within a short walk from designer boutique and chic cafe-lined streets. Sightseeing opportunities in Ubud are virtually endless. The town itself is densely dotted with a multitude of ancient temples, palaces and historical sites. There are many more off-the-beaten-track spots around this magical island worth discovering.</li>
+                </ul>   
         </div>
         <br><br>
         <table class="table table-bordered">
@@ -175,43 +202,63 @@
 
     <!-- footer -->
     <footer class="cpy-right bg-theme" data-blast="bgColor">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="wthree-social">
-                        <ul>
-                            <li>
-                                <a href="#" id="fb">
-                                    <span class="fa fa-facebook-f icon_facebook"></span>
-                                </a>
+            <div class="container" style="padding-bottom:1em;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="d-flex header-w3_pvt">
+    
+                            <li class=" headhide">
+                                <span class="fa fa-envelope-open"></span>
+                                <a href="mailto:info@luxuryindotravel.com" class="text-white">info@luxuryindotravel.com</a>
                             </li>
-                            <li>
-                                <a href="#" id="twitter">
-                                    <span class="fa fa-twitter icon_twitter"></span>
-                                </a>
+                            <li class="headhide">
+                                <span class="fa fa-phone"></span>
+                                <a href="tel:+"></a>
+                                <p class="d-inline text-white">+62 789456123</p>
                             </li>
-                            <li>
-                                <a href="#" id="insta">
-                                    <span class="fa fa-instagram icon_dribbble"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" id="g-plus">
-                                    <span class="fa fa-google-plus icon_g_plus"></span>
-                                </a>
-                            </li>
+    
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 text-lg-right mt-lg-4 mt-4">
-                    <p>© 2018 Luxury Indo Travel. All rights reserved | Design by
-                        <a href="https://ramjivan.github.io/g1/"> Jivan </a>
-                    </p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="wthree-social">
+                            <ul>
+                                <li>
+                                    <a href="#" id="fb">
+                                        <span class="fa fa-facebook-f icon_facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?phone=8003209036&text=Hey Luxury Indo Travel!"
+                                        id="twitter">
+                                        <span class="fa fa-whatsapp icon_twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="insta">
+                                        <span class="fa fa-instagram icon_dribbble"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="g-plus">
+                                        <span class="fa fa-youtube icon_g_plus"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-lg-right mt-lg-4 mt-4">
+                        <p>© 2018 Luxury Indo Travel. All rights reserved | <a href="https://ramjivan.github.io/g1/">Design by
+                             Jivan </a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- //footer -->
+        </footer>
+        <!-- //footer -->
     <!-- login  -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -308,84 +355,7 @@
         </div>
     </div>
     <!-- // register -->
-    <!-- blog modal1 -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-theme">
-                    <h5 class="modal-title" id="exampleModalLabel2">Cras ultricies ligula sed magna dictum porta
-                        auris
-                        blandita.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="images/p1.jpg" class="img-fluid" alt="" />
-                    <p class="text-left my-4">
-                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
-                        nisl
-                        tempus convallis quis ac
-                        lectus. Cras ultricies ligula sed magna dictum porta.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //blog modal1 -->
-    <!-- blog modal2 -->
-    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-theme">
-                    <h5 class="modal-title" id="exampleModalLabel3">Cras ultricies ligula sed magna dictum porta
-                        auris
-                        blandita.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="images/p2.jpg" class="img-fluid" alt="" />
-                    <p class="text-left my-4">
-                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
-                        nisl
-                        tempus convallis quis ac
-                        lectus. Cras ultricies ligula sed magna dictum porta.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //blog modal2 -->
-    <!-- blog modal3 -->
-    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-theme">
-                    <h5 class="modal-title" id="exampleModalLabel4">Cras ultricies ligula sed magna dictum porta
-                        auris
-                        blandita.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="images/p3.jpg" class="img-fluid" alt="" />
-                    <p class="text-left my-4">
-                        Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet
-                        nisl
-                        tempus convallis quis ac
-                        lectus. Cras ultricies ligula sed magna dictum porta.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //blog modal3-->
+    
     <!-- js -->
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/custom.js"></script>
