@@ -1744,3 +1744,9 @@ span.icon_g_plus {
 li p{
     font-size: 1.2em;
 }
+.service_header{
+    text-align: center;
+}
+.service_desc{
+    text-align: left;
+}
