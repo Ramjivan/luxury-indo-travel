@@ -1750,3 +1750,7 @@ li p{
 .service_desc{
     text-align: left;
 }
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
