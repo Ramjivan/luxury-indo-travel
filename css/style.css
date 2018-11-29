@@ -425,6 +425,59 @@ ul.callbacks_tabs {
     background-size: cover;
     
 }
+.banner21 {
+    background: url(../images/destwed.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    
+}
+
+.banner22 {
+    background: url(../images/mice.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    
+}
+.banner23 {
+    background: url(../images/git.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; 
+}
+
+.banner241 {
+    background: url(../images/241.jpg) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; 
+}
+.banner242 {
+    background: url(../images/242.jpg) bottom no-repeat;
+    padding-top: 20em;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; 
+}
+.banner243 {
+    background: url(../images/243.png) bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover; 
+}
 .banner:before {
     position: absolute;
     content: '';
